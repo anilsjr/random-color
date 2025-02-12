@@ -1,4 +1,4 @@
-
+/* Reset some default styles */
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +7,7 @@
     box-sizing: border-box;
 }
 
+/* Body styling */
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -15,6 +16,7 @@ body {
     width: 100%;
 }
 
+/* Styling for the color boxes */
 .color-box {
     width: 200px;
     height: 130px;
@@ -30,12 +32,88 @@ body {
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
+/* Hover effect for the color boxes */
 .color-box:hover {
     transform: scale(1.03); /* Slightly increase size on hover */
     box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3); /* Deeper shadow */
 }
-footer{
-    margin-top: 20px;
+
+button#load/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    height: 100%;
+    width: 100%;
+}
+
+/* Styling for the color boxes */
+.color-box {
+    width: 200px;
+    height: 130px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* Hover effect for the color boxes */
+.color-box:hover {
+    transform: scale(1.03); /* Slightly increase size on hover */
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3); /* Deeper shadow */
+}
+
+/* Styling for the load button */
+button#load {
+    position: fixed;
+    bottom: 80px; /* Adjusted to be at the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+/* Footer styling */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Mobile view - Show 2 boxes per row */
+@media only screen and (max-width: 500px) {
+    .color-box {
+        width: 45%;
+        height: 100px;
+        margin: 5px;
+    }
+}
+button#{
+    position: fixed;
+    top: 70%;
+    z-index: 1000;
+}
+/* Footer styling */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 /* Mobile view - Show 2 boxes per row */
