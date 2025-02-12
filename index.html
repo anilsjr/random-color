@@ -11,18 +11,34 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bg-light">
+  <div id="toast-message">
+    <div id="toast-message-body">copied! *564645</div>
+  </div>
+
 
   <div class="container text-center mt-5">
+    <!-- toast message -->
+    <!-- <button type="button" class="btn btn-primary" id="liveToastBtn">Show toast</button> -->
+    
+
+
+
+
+
     <h2 class="mb-4">Random Color Generator</h2>
     <!-- Container for dynamically generated colors -->
     <div class="row gap-2 justify-content-center" id="color-container"></div>
 </div>
    
-<!-- load more -->
- <button id="load" class="btn btn-primary" onclick="createColorBoxElement()">load more</button>
+<!-- Button to load more color boxes -->
+<button id="load" class="btn btn-primary ml-2" onclick="createColorBoxElement()">Load More</button>
+
+
+
+
 <!-- Footer section with links to GitHub and Portfolio -->
 <footer class="text-center p-3 bg-dark text-white">
-  <a href="https://github.com/anilsjr" class="btn btn-primary ml-2 ">
+  <a href="https://github.com/anilsjr" class="btn btn-primary ml-2">
     <i class="fab fa-github"></i> GitHub
   </a>
 
@@ -31,6 +47,8 @@
   </a>
 </footer>
 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <!-- JavaScript file for functionality -->
 <script src="js/script.js"></script>
 </body>

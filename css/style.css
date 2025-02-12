@@ -15,46 +15,33 @@ body {
     height: 100%;
     width: 100%;
 }
-
-/* Styling for the color boxes */
-.color-box {
-    width: 200px;
-    height: 130px;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
+#toast-message{
+    display: none;
+    position: fixed;
+    top: 5%;
+    left: 10px;
+    width: 50%;
+    height: 50px;
+    background: rgba(15, 6, 46, 0.8);
+}
+#toast-message #toast-message-body{ 
+    /* display: flex; */
+    display: none;
     justify-content: center;
-    font-weight: bold;
-    color: white;
-    border: 1px solid black;
-    border-radius: 8px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-}
-
-/* Hover effect for the color boxes */
-.color-box:hover {
-    transform: scale(1.03); /* Slightly increase size on hover */
-    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3); /* Deeper shadow */
-}
-
-button#load/* Reset some default styles */
-* {
-    margin: 0;
-    padding: 0;
-    outline: none;
-    text-decoration: none;
-    box-sizing: border-box;
-}
-
-/* Body styling */
-body {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    align-items: center;
     height: 100%;
-    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    /* background-color: #4CAF50; */
+    border-radius: 8px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
+.container{
+    margin-bottom: 100px;
+}
+
 
 /* Styling for the color boxes */
 .color-box {
@@ -74,8 +61,8 @@ body {
 
 /* Hover effect for the color boxes */
 .color-box:hover {
-    transform: scale(1.03); /* Slightly increase size on hover */
-    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3); /* Deeper shadow */
+    transform: scale(1.01); /* Slightly increase size on hover */
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.8); /* Deeper shadow */
 }
 
 /* Styling for the load button */
@@ -103,24 +90,12 @@ footer {
         margin: 5px;
     }
 }
-button#{
-    position: fixed;
-    top: 70%;
-    z-index: 1000;
-}
-/* Footer styling */
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-}
 
-/* Mobile view - Show 2 boxes per row */
-@media only screen and (max-width: 500px) {
+/* Desktop view - Show 3 boxes per row */
+@media only screen and (min-width: 601px) {
     .color-box {
-        width: 45%;
-        height: 100px;
+        width: 30%;
+        height: 130px;
         margin: 5px;
     }
 }
